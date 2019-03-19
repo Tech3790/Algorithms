@@ -15,7 +15,7 @@ const getSize = head => {
 
 var insertFromEnd = function(head, value, offset) {
   let newNode = Node(value);
-  // to get the location of where to insert the new node we sustract the offset from the size of the original list.
+  // to get the location of where to insert the new node we substract the offset from the size of the original list.
   let location = getSize(head) - offset;
   let currentLocation = 1;
   let current = head;
@@ -31,4 +31,3 @@ var insertFromEnd = function(head, value, offset) {
   }
   return head;
 };
-
